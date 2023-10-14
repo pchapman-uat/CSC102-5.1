@@ -1,0 +1,8 @@
+Incorrect:
+if ((value === goal) && ((Number(value) <= (Number(goal) + Number(max))) && (Number(value) >= (Number(goal) - Number(max)))))
+
+Correct:
+if ((value === goal) || ((Number(value) <= (Number(goal) + Number(max))) && (Number(value) >= (Number(goal) - Number(max)))))
+
+The change was from an or statement, to an and statment, when this is an and, the player must be within the range given by the grace, and their number must be the exact same as the goal.
+The only way for the player to win is if the player gets the exact same roll as the goal, in the screenshot, it demonstrates a situation where the player would of won normaly.
